@@ -4,10 +4,9 @@ public class SubArray {
 
 	static boolean isSubset(int arr1[], int arr2[], int m, int n)
     {
-        int i = 0;
-        int j = 0;
-        for (i = 0; i < n; i++) {
-            for (j = 0; j < m; j++) {
+        
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
                 if (arr2[i] == arr1[j])
                     break;
             }
@@ -18,15 +17,9 @@ public class SubArray {
  
         return true;
     }
-	
-	
-	
-	
-	
-	
 	public static void main(String[] args) {
 		
-		int arr1[] = { 11, 10, 13, 21, 30, 70 };
+	int arr1[] = { 11, 10, 13, 21, 30, 70 };
         int arr2[] = { 11, 30, 70, 10 };
     
         int m = arr1.length;
